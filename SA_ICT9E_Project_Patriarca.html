@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Q4 Project</title>
+</head>
+<body bgcolor="#9E4DFF">
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h1 align="center">Milimeter Converter</h1>
+	<br>
+	<form>
+		<p align="center">
+			<label>Insert Value:</label>
+		<input type="number" name="num1" id="num1"><br></input>
+		</p>
+		<br>
+		<br>
+		<p align="center">
+		<button type="submit" onclick="Compute()">Convert to Centimeters</button>
+		<button type="submit" onclick="Solve()">Convert to Meters</button>
+		<button type="submit" onclick="Enumerate()">Convert to Kilometers</button>
+		</p>
+	</form>
+	<script>
+		function Compute(){
+    		var num1 = document.getElementById("num1").value;
+    		var centimeters = Number (num1 / 10);
+    		window.alert("Centimeters: " + centimeters);
+		}
+	</script>
+	<script>
+		function Solve(){
+    		var num1 = document.getElementById("num1").value;
+    		var meters = Number (num1 / 1000);
+    		window.alert("Meters: " + meters);
+		}
+	</script>
+	<script>
+		function Enumerate(){
+    		var num1 = document.getElementById("num1").value;
+    		var kilometers = Number (num1 / 1000000);
+    		window.alert("Kilometers: " + kilometers);
+		}
+	</script>
+	
+
+
+</body>
+</html>
